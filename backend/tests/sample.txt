@@ -1,0 +1,12 @@
+ResolveAI is an AI-powered customer support assistant.
+It uses Retrieval-Augmented Generation to answer questions
+grounded in a company's knowledge base.
+
+When a customer asks a question, ResolveAI searches the 
+knowledge base for relevant information before generating 
+an answer. This prevents hallucination and ensures every 
+response is traceable to a source document.
+
+Supported document types include PDF, Markdown, and plain text.
+Documents are split into overlapping chunks before being 
+embedded and stored in a vector database.
