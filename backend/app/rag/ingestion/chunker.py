@@ -31,7 +31,7 @@ def chunk_document(
 
         chunk_text = text[start:end].strip()
 
-        if chunk_text:
+        if chunk_text and len(chunk_text) > 50:
             chunks.append(
                 Chunk(
                     content=chunk_text,
