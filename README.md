@@ -3,7 +3,7 @@
 > AI-powered customer support assistant using Retrieval-Augmented Generation (RAG).
 
 ## Status
-🚧 Under active development — v0.1 scaffold complete.
+🚧 Under active development — v0.3 — Embeddings complete.
 
 ## Overview
 ResolveAI answers customer support questions by retrieving relevant information 
@@ -21,8 +21,8 @@ in real documentation instead of hallucinating.
 
 ## Development Roadmap
 - [x] v0.1 — Project scaffold
-- [ ] v0.2 — Document ingestion pipeline
-- [ ] v0.3 — Embeddings and vector storage
+- [x] v0.2 — Document ingestion pipeline
+- [x] v0.3 — Embeddings and vector storage
 - [ ] v0.4 — Retrieval engine
 - [ ] v0.5 — End-to-end RAG
 - [ ] v0.6 — Frontend and citations
