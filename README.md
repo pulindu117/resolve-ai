@@ -23,7 +23,7 @@ in real documentation instead of hallucinating.
 - [x] v0.1 — Project scaffold
 - [x] v0.2 — Document ingestion pipeline
 - [x] v0.3 — Embeddings and vector storage
-- [ ] v0.4 — Retrieval engine
+- [x] v0.4 — Retrieval engine
 - [ ] v0.5 — End-to-end RAG
 - [ ] v0.6 — Frontend and citations
 - [ ] v1.0 — Production polish
