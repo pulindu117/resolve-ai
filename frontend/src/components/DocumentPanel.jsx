@@ -44,36 +44,43 @@ export default function DocumentPanel() {
   }
 
   return (
-    <div className="w-72 border-l p-4 flex flex-col gap-4">
-      <div>
-        <h2 className="font-semibold mb-2">Knowledge Base</h2>
-        <input
-          type="file"
-          accept=".pdf,.md,.markdown,.txt"
-          onChange={handleFileChange}
-          disabled={uploading}
-          className="text-sm"
-        />
-        {uploading && <p className="text-xs text-gray-400 mt-1">Uploading...</p>}
+    <div className="w-80 border-l border-[#E5E4DE] bg-white flex flex-col">
+      <div className="p-5 border-b border-[#E5E4DE]">
+        <h2 className="text-sm font-semibold text-[#1A1A1A] mb-3">Knowledge base</h2>
+
+        <label className="flex items-center justify-center gap-2 border border-dashed border-[#D3D2CA] rounded-xl py-3 text-sm text-[#8B8D98] cursor-pointer hover:border-[#4F46E5] hover:text-[#4F46E5] transition-colors">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path d="M12 4V16M12 4L7 9M12 4L17 9" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M4 17V19C4 20.1 4.9 21 6 21H18C19.1 21 20 20.1 20 19V17" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
+          </svg>
+          {uploading ? "Uploading..." : "Upload document"}
+          <input
+            type="file"
+            accept=".pdf,.md,.markdown,.txt"
+            onChange={handleFileChange}
+            disabled={uploading}
+            className="hidden"
+          />
+        </label>
       </div>
 
-      <div className="flex flex-col gap-2">
+      <div className="flex-1 overflow-y-auto p-5 flex flex-col gap-2">
         {documents.length === 0 && (
-          <p className="text-sm text-gray-400">No documents indexed yet.</p>
+          <p className="text-sm text-[#8B8D98] text-center mt-8">No documents indexed yet.</p>
         )}
 
         {documents.map((doc) => (
           <div
             key={doc.source}
-            className="flex items-center justify-between bg-gray-50 rounded-lg px-3 py-2 text-sm"
+            className="flex items-center justify-between bg-[#FAFAF8] border border-[#E5E4DE] rounded-xl px-3 py-2.5"
           >
-            <div>
-              <div className="font-medium">{doc.source}</div>
-              <div className="text-gray-400 text-xs">{doc.chunk_count} chunks</div>
+            <div className="min-w-0">
+              <div className="font-medium text-sm text-[#1A1A1A] truncate">{doc.source}</div>
+              <div className="text-[#8B8D98] text-xs">{doc.chunk_count} chunks</div>
             </div>
             <button
               onClick={() => handleDelete(doc.source)}
-              className="text-red-500 hover:text-red-700 text-xs"
+              className="text-[#B54545] hover:text-[#8F3535] text-xs font-medium flex-shrink-0 ml-2"
             >
               Delete
             </button>

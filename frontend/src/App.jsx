@@ -3,14 +3,26 @@ import DocumentPanel from "./components/DocumentPanel";
 
 export default function App() {
   return (
-    <div className="h-screen flex flex-col">
-      <header className="border-b px-6 py-4">
-        <h1 className="text-xl font-semibold">ResolveAI</h1>
-        <p className="text-sm text-gray-400">AI-powered customer support assistant</p>
+    <div className="h-screen flex flex-col bg-[#FAFAF8]">
+      <header className="bg-[#14161F] px-8 py-5 flex items-center gap-3">
+        <div className="w-8 h-8 rounded-lg bg-[#4F46E5] flex items-center justify-center">
+          <span className="text-white text-sm font-semibold" style={{ fontFamily: "var(--font-display)" }}>R</span>
+        </div>
+        <div>
+          <h1
+            className="text-white text-lg leading-tight"
+            style={{ fontFamily: "var(--font-display)", fontWeight: 600 }}
+          >
+            ResolveAI
+          </h1>
+          <p className="text-[#8B8D98] text-xs leading-tight">
+            Answers grounded in your knowledge base
+          </p>
+        </div>
       </header>
 
       <div className="flex flex-1 overflow-hidden">
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col">
           <ChatWindow />
         </div>
         <DocumentPanel />

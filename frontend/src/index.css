@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+:root {
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background: #FAFAF8;
+}
+
 /*
 :root {
   --text: #6b6375;
