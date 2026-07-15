@@ -3,7 +3,8 @@
 > AI-powered customer support assistant using Retrieval-Augmented Generation (RAG).
 
 ## Status
-🚧 Under active development — v0.5 — End-to-end RAG complete.
+🚧 Under active development
+- v0.7 — Frontend and citations complete.
 
 ## Overview
 ResolveAI answers customer support questions by retrieving relevant information 
@@ -12,7 +13,7 @@ in real documentation instead of hallucinating.
 
 ## Tech Stack
 - **Backend:** Python 3.12+, FastAPI
-- **AI:** Anthropic Claude API
+- **AI:** Gemini API
 - **Embeddings:** BAAI/bge-small-en-v1.5
 - **Vector DB:** ChromaDB
 - **Frontend:** React + Vite + Tailwind
@@ -26,5 +27,5 @@ in real documentation instead of hallucinating.
 - [x] v0.4 — Retrieval engine
 - [x] v0.5 — End-to-end RAG
 - [x] v0.6 — FastAPI endpoints
-- [ ] v0.7 — Frontend and citations
+- [x] v0.7 — Frontend and citations
 - [ ] v1.0 — Production polish
