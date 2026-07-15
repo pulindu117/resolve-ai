@@ -25,5 +25,6 @@ in real documentation instead of hallucinating.
 - [x] v0.3 — Embeddings and vector storage
 - [x] v0.4 — Retrieval engine
 - [x] v0.5 — End-to-end RAG
-- [ ] v0.6 — Frontend and citations
+- [x] v0.6 — FastAPI endpoints
+- [ ] v0.7 — Frontend and citations
 - [ ] v1.0 — Production polish
