@@ -21,6 +21,12 @@ base content before generating an answer, and cites its sources.
    If the knowledge base has no relevant information, it says so
    instead of guessing.
 
+## Screenshots
+https://github.com/pulindu117/resolve-ai/assets/1.png
+https://github.com/pulindu117/resolve-ai/assets/2.png
+https://github.com/pulindu117/resolve-ai/assets/3.png
+https://github.com/pulindu117/resolve-ai/assets/4.png
+
 ## Architecture
 
 Frontend (React) → FastAPI → Retrieval (ChromaDB) → LLM (Gemini) → Answer + citations
