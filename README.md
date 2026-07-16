@@ -22,10 +22,10 @@ base content before generating an answer, and cites its sources.
    instead of guessing.
 
 ## Screenshots
-https://github.com/pulindu117/resolve-ai/assets/1.png
-https://github.com/pulindu117/resolve-ai/assets/2.png
-https://github.com/pulindu117/resolve-ai/assets/3.png
-https://github.com/pulindu117/resolve-ai/assets/4.png
+![alt text](1.png)
+![alt text](2.png)
+![alt text](3.png)
+![alt text](4.png)
 
 ## Architecture
 
